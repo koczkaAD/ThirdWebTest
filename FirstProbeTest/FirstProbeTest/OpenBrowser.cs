@@ -79,8 +79,8 @@ namespace FirstProbeTest
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://www.ranorex.com/web-testing-examples/' with browser 'chrome' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("https://www.ranorex.com/web-testing-examples/", "chrome", "", false, false, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://www.ranorex.com/web-testing-examples/' with browser 'chrome' in maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("https://www.ranorex.com/web-testing-examples/", "chrome", "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
         }

@@ -79,6 +79,26 @@ namespace FirstProbeTest
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Testemail' at 25;10.", repo.ApplicationUnderTest.TestemailInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.Testemail.Click("25;10");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'asdgmail.com' with focus on 'ApplicationUnderTest.Testemail'.", repo.ApplicationUnderTest.TestemailInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.Testemail.PressKeys("asdgmail.com");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Testcheckbox' at 6;7.", repo.ApplicationUnderTest.TestcheckboxInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.Testcheckbox.Click("6;7");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Blue' at 20;10.", repo.ApplicationUnderTest.BlueInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.Blue.Click("20;10");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Submit' at 70;17.", repo.ApplicationUnderTest.SubmitInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.Submit.Click("70;17");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

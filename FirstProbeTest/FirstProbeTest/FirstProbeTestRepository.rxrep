@@ -1,31 +1,71 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="FirstProbeTestRepository"
+﻿<repository
 id="b7227fbe-0848-4ce7-ab22-bf2351fddc83"
+name="FirstProbeTestRepository"
 rxversion="8.3">
-  <codegen
-  classname="FirstProbeTestRepository"
-  namespace="FirstProbeTest"/>
-  <rootfolder
-  name="Root"
-  id="2a497b67-c760-4482-bc70-bdb1fd6bc0a2"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-      <appfolder
-          addcaps="container,webdocument"
-          capname="webdocument"
-          id="3417fcca-48a7-492b-a819-691f4ca56ddb"
-          isrooted="True"
-          name="ApplicationUnderTest"
-          searchtimeout="30000ms"
-          usecache="True">
-          <basepath>
-              /dom[@domain='www.ranorex.com']
-          </basepath>
-          <icon>
-iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+	<codegen
+	classname="FirstProbeTestRepository"
+	namespace="FirstProbeTest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="2a497b67-c760-4482-bc70-bdb1fd6bc0a2"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="3417fcca-48a7-492b-a819-691f4ca56ddb"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="94daff6f-ff01-45e4-b539-ddedc85cc6c2"
+			name="Testemail"
+			refimgid="c25f7651-d5df-4152-b49b-621e11c44f6c"
+			refpath="/dom[@domain='www.ranorex.com' and @caption~'^Ranorex\ Studio\ -\ Web\ test']//input[#'testemail']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//input[#'testemail']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="608a6fee-e7aa-42e1-ad8f-3b2dbc00bf00"
+			name="Testcheckbox"
+			refimgid="bee51599-9691-4c64-81e4-a5cb9528f8a9"
+			refpath="/dom[@domain='www.ranorex.com' and @caption~'^Ranorex\ Studio\ -\ Web\ test']//input[#'testcheckbox']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//input[#'testcheckbox']
+			</item>
+			<item
+			addcaps="unknown,webelement,optiontag"
+			capname="optiontag"
+			id="3bc83d7f-f744-442e-9573-a8ff3b3ab4ce"
+			name="Blue"
+			refimgid="12941d5b-c285-4fb4-9a70-567b7da22b79"
+			refpath="/dom[@domain='www.ranorex.com' and @caption~'^Ranorex\ Studio\ -\ Web\ test']//select[#'testmultiple']/option[@value='blue']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//select[#'testmultiple']/option[@value='blue']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="44f536df-f0ff-4225-85b1-0d57362a3be8"
+			name="Submit"
+			refimgid="4b28a60c-0977-4f39-8858-46475b2c77ef"
+			refpath="/dom[@domain='www.ranorex.com' and @caption~'^Ranorex\ Studio\ -\ Web\ test']//input[#'submit']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//input[#'submit']
+			</item>
+			<basepath>
+				/dom[@domain='www.ranorex.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
 dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
 yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
@@ -38,9 +78,11 @@ lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
 zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-          </icon>
-      </appfolder>
-      <basepath/>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>

@@ -38,7 +38,7 @@ rxversion="8.3">
 		incognito="False"
 		instrument="True"
 		killexisting="False"
-		maximized="False"
+		maximized="True"
 		optional="False">
 			<comment>
 			</comment>

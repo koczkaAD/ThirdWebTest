@@ -85,6 +85,10 @@ namespace FirstProbeTest
         [RepositoryFolder("3417fcca-48a7-492b-a819-691f4ca56ddb")]
         public partial class ApplicationUnderTestAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _testemailInfo;
+            RepoItemInfo _testcheckboxInfo;
+            RepoItemInfo _blueInfo;
+            RepoItemInfo _submitInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -92,6 +96,10 @@ namespace FirstProbeTest
             public ApplicationUnderTestAppFolder(RepoGenBaseFolder parentFolder) :
                     base("ApplicationUnderTest", "/dom[@domain='www.ranorex.com']", parentFolder, 30000, null, true, "3417fcca-48a7-492b-a819-691f4ca56ddb", "")
             {
+                _testemailInfo = new RepoItemInfo(this, "Testemail", ".//input[#'testemail']", 30000, null, "94daff6f-ff01-45e4-b539-ddedc85cc6c2");
+                _testcheckboxInfo = new RepoItemInfo(this, "Testcheckbox", ".//input[#'testcheckbox']", 30000, null, "608a6fee-e7aa-42e1-ad8f-3b2dbc00bf00");
+                _blueInfo = new RepoItemInfo(this, "Blue", ".//select[#'testmultiple']/option[@value='blue']", 30000, null, "3bc83d7f-f744-442e-9573-a8ff3b3ab4ce");
+                _submitInfo = new RepoItemInfo(this, "Submit", ".//input[#'submit']", 30000, null, "44f536df-f0ff-4225-85b1-0d57362a3be8");
             }
 
             /// <summary>
@@ -115,6 +123,102 @@ namespace FirstProbeTest
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Testemail item.
+            /// </summary>
+            [RepositoryItem("94daff6f-ff01-45e4-b539-ddedc85cc6c2")]
+            public virtual Ranorex.InputTag Testemail
+            {
+                get
+                {
+                    return _testemailInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Testemail item info.
+            /// </summary>
+            [RepositoryItemInfo("94daff6f-ff01-45e4-b539-ddedc85cc6c2")]
+            public virtual RepoItemInfo TestemailInfo
+            {
+                get
+                {
+                    return _testemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Testcheckbox item.
+            /// </summary>
+            [RepositoryItem("608a6fee-e7aa-42e1-ad8f-3b2dbc00bf00")]
+            public virtual Ranorex.InputTag Testcheckbox
+            {
+                get
+                {
+                    return _testcheckboxInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Testcheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("608a6fee-e7aa-42e1-ad8f-3b2dbc00bf00")]
+            public virtual RepoItemInfo TestcheckboxInfo
+            {
+                get
+                {
+                    return _testcheckboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Blue item.
+            /// </summary>
+            [RepositoryItem("3bc83d7f-f744-442e-9573-a8ff3b3ab4ce")]
+            public virtual Ranorex.OptionTag Blue
+            {
+                get
+                {
+                    return _blueInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Blue item info.
+            /// </summary>
+            [RepositoryItemInfo("3bc83d7f-f744-442e-9573-a8ff3b3ab4ce")]
+            public virtual RepoItemInfo BlueInfo
+            {
+                get
+                {
+                    return _blueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Submit item.
+            /// </summary>
+            [RepositoryItem("44f536df-f0ff-4225-85b1-0d57362a3be8")]
+            public virtual Ranorex.InputTag Submit
+            {
+                get
+                {
+                    return _submitInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Submit item info.
+            /// </summary>
+            [RepositoryItemInfo("44f536df-f0ff-4225-85b1-0d57362a3be8")]
+            public virtual RepoItemInfo SubmitInfo
+            {
+                get
+                {
+                    return _submitInfo;
                 }
             }
         }
