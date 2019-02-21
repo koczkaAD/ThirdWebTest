@@ -5,7 +5,7 @@ id="254d6c41-3021-4782-b329-195fd4b5ee65"
 mode="Desktop"
 rxversion="8.3">
 	<name>
-		Recording1
+		FirstRecorded
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Recording1"
+	classname="FirstRecorded"
 	namespace="FirstProbeTest">
 	</codegen>
 	<variables>
@@ -1073,7 +1073,7 @@ phpKCbj99ODVHSigaZJmjNMzSikUh1LSUUABphFPpppgNAp4FIKWgQE0wtStUZpksC1MLUGmGmIC
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Recording1.UserCode.cs
+		FirstRecorded.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

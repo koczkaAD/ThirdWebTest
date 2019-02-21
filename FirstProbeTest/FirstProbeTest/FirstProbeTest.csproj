@@ -149,15 +149,15 @@
     <Compile Include="Program.cs">
       <id>283c57e9-beba-41a3-ab45-a290f9f5f500</id>
     </Compile>
-    <Compile Include="Recording1.cs">
+    <Compile Include="FirstRecorded.cs">
       <BoundTo>64c4262f-c22d-4325-869d-1f6827253e7c</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <DependentUpon>FirstRecorded.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>c9e4f4de-bd8f-4ac4-805e-3842b1370305</id>
     </Compile>
-    <Compile Include="Recording1.UserCode.cs">
+    <Compile Include="FirstRecorded.UserCode.cs">
       <BoundTo>64c4262f-c22d-4325-869d-1f6827253e7c</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <DependentUpon>FirstRecorded.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>45279722-6693-4aec-9ff5-8d05ba8f92f9</id>
     </Compile>
@@ -187,7 +187,7 @@
       <id>590005c8-b7a4-48d8-8b39-30f6f95ab2ba</id>
       <recordtableid>9799a26a-210d-4508-86bf-dc0102dca2ad</recordtableid>
     </None>
-    <None Include="Recording1.rxrec">
+    <None Include="FirstRecorded.rxrec">
       <BoundTo>0fed611e-9e5c-4675-8de6-9f22d01c82cc</BoundTo>
       <id>64c4262f-c22d-4325-869d-1f6827253e7c</id>
       <recordtableid>254d6c41-3021-4782-b329-195fd4b5ee65</recordtableid>

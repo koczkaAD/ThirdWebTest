@@ -24,29 +24,29 @@ namespace FirstProbeTest
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The FirstRecorded recording.
     /// </summary>
     [TestModule("254d6c41-3021-4782-b329-195fd4b5ee65", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    public partial class FirstRecorded : ITestModule
     {
         /// <summary>
         /// Holds an instance of the FirstProbeTestRepository repository.
         /// </summary>
         public static FirstProbeTestRepository repo = FirstProbeTestRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static FirstRecorded instance = new FirstRecorded();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public FirstRecorded()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static FirstRecorded Instance
         {
             get { return instance; }
         }
