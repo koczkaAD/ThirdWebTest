@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="254d6c41-3021-4782-b329-195fd4b5ee65"
+mode="Desktop"
+rxversion="8.3">
+	<name>
+		Recording1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="FirstProbeTest">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="b7227fbe-0848-4ce7-ab22-bf2351fddc83"
+	name="FirstProbeTestRepository"
+	relativepath="FirstProbeTestRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="FirstProbeTestRepository"
+		namespace="FirstProbeTest">
+		</codegen>
+		<rootfolder
+		id="2a497b67-c760-4482-bc70-bdb1fd6bc0a2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

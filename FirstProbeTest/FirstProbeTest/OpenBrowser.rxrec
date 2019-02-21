@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9799a26a-210d-4508-86bf-dc0102dca2ad"
+mode="Desktop"
+rxversion="8.3">
+	<name>
+		OpenBrowser
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBrowser"
+	namespace="FirstProbeTest">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="chrome"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				https://www.ranorex.com/web-testing-examples/
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="b7227fbe-0848-4ce7-ab22-bf2351fddc83"
+	name="FirstProbeTestRepository"
+	relativepath="FirstProbeTestRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="FirstProbeTestRepository"
+		namespace="FirstProbeTest">
+		</codegen>
+		<rootfolder
+		id="2a497b67-c760-4482-bc70-bdb1fd6bc0a2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

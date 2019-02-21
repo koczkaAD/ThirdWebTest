@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.3">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="FirstProbeTest"
+      id="89b08d3b-3e24-4cf9-83f8-91d3f0f0d72a"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="FirstProbeTest"
+      id="89b08d3b-3e24-4cf9-83f8-91d3f0f0d72a"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

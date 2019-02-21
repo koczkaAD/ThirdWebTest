@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="be7ed5e9-bdaa-469f-97f0-0cb42bf56a66"
+mode="Desktop"
+rxversion="8.3">
+	<name>
+		CloseBrowser
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="FirstProbeTest">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="81cdf338-0fbd-4a26-953c-721dace58de2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3417fcca-48a7-492b-a819-691f4ca56ddb"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='chrome']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="b7227fbe-0848-4ce7-ab22-bf2351fddc83"
+	name="FirstProbeTestRepository"
+	relativepath="FirstProbeTestRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="FirstProbeTestRepository"
+		namespace="FirstProbeTest">
+		</codegen>
+		<rootfolder
+		id="2a497b67-c760-4482-bc70-bdb1fd6bc0a2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
